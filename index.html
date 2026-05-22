@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Día de Canarias — El Gofio | Cuadrante de Actividades</title>
+  <meta name="description" content="Cuadrante interactivo y accesible de las actividades para la jornada del Día de Canarias en nuestro centro educativo. Filtra tu horario y consulta tu curso de manera intuitiva.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-container">
+    
+    <!-- Encabezado de la Web con Logo y Bandera -->
+    <header class="header" id="app-header">
+      <div class="header-brand">
+        <!-- Logo del instituto con fallback por si hay discrepancias en la extensión o nombre -->
+        <img src="logo-insti-entero2 mk3.png" alt="Logo del Centro Educativo" class="logo-school" id="school-logo" onerror="this.style.display='none'">
+        <div class="header-text">
+          <h1>Día de Canarias</h1>
+          <p>Jornada Temática: "EL GOFIO"</p>
+        </div>
+      </div>
+      
+      <div class="header-controls">
+        <img src="Flag_of_the_Canary_Islands_(simple).svg.png" alt="Bandera de Canarias" class="flag-canarias" id="canary-flag">
+        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Cambiar tema de color" title="Alternar Modo Oscuro/Claro">🌙</button>
+      </div>
+    </header>
+
+    <main>
+      
+      <!-- Banner de Notas Generales (explicación de la jornada) -->
+      <section class="info-banner" id="general-notes-banner" aria-labelledby="banner-title">
+        <div class="info-banner-icon" aria-hidden="true">💡</div>
+        <div class="info-banner-content">
+          <h3 id="banner-title">Información Importante de la Jornada</h3>
+          <p id="general-notes-text">Cargando instrucciones...</p>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 1: VISTA GENERAL POR HORAS -->
+      <section class="hour-view-container" id="hour-view-section" aria-labelledby="hour-section-heading">
+        <h2 id="hour-section-heading" class="timeline-section-title">Planificación por Horas</h2>
+        <p class="timeline-section-subtitle">Navega a través de las 6 horas lectivas y consulta el cuadrante</p>
+
+        <!-- Selector de Horas de Navegación -->
+        <nav class="hour-selector-bar" id="hour-tabs-container" aria-label="Horas lectivas"></nav>
+
+        <!-- Mensaje guía cuando ninguna hora está seleccionada -->
+        <div class="empty-hour-state" id="empty-hour-state">
+          <div class="empty-timeline-icon" aria-hidden="true">🕒</div>
+          <p class="empty-timeline-text">Pulsa uno de los botones de arriba para ver las actividades de esa hora.<br>Pulsa de nuevo el mismo botón para ocultarlas.</p>
+        </div>
+
+        <!-- Contenedor del Cuadrante Horario (oculto hasta que se seleccione hora) -->
+        <div class="hour-section" id="hour-content-panel">
+          <div class="hour-header">
+            <div class="hour-title-container">
+              <span class="hour-icon" aria-hidden="true">⏰</span>
+              <span class="hour-title" id="active-hour-title">1ª Hora</span>
+            </div>
+            <span class="hour-time-badge" id="active-hour-badge">Franja 1</span>
+          </div>
+
+          <!-- Encabezado general para el docente acompañante -->
+          <div class="generic-teacher-header">
+            <strong>👤 Docente Acompañante General:</strong> El docente que imparte clases en esta franja horaria (salvo actividades específicas).
+          </div>
+
+          <!-- Vista de Tabla para Ordenadores (Desktop) -->
+          <div class="schedule-table-wrapper">
+            <table class="schedule-table" id="schedule-table">
+              <thead>
+                <tr>
+                  <th scope="col" style="width: 25%;">Zona / Lugar</th>
+                  <th scope="col" style="width: 35%;">Acción / Actividad</th>
+                  <th scope="col" style="width: 20%;">Grupos</th>
+                  <th scope="col" style="width: 18%;">Observaciones</th>
+                  <th scope="col" style="width: 2%; text-align: center;">⭐</th>
+                </tr>
+              </thead>
+              <tbody id="schedule-table-body">
+                <!-- Se rellena con app.js -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Vista de Tarjetas para Dispositivos Móviles (Móvil) -->
+          <div class="mobile-cards-container" id="mobile-cards-container">
+            <!-- Se rellena con app.js -->
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECCIÓN 2: MI JORNADA PERSONALIZADA (TIMELINE POR CURSO) -->
+      <section class="timeline-section-container" id="my-timeline-section" aria-labelledby="timeline-heading">
+        <h2 id="timeline-heading" class="timeline-section-title">🎓 Mi Jornada Personalizada</h2>
+        <p class="timeline-section-subtitle">Selecciona tu curso para obtener un resumen súper claro e intuitivo de todo tu día paso a paso</p>
+
+        <!-- Selector de Curso en Grid -->
+        <div class="course-grid-container">
+          <h3 class="course-grid-title">Haz clic en tu Curso o Nivel:</h3>
+          <div class="course-selector-grid" id="course-selector-grid">
+            <!-- Se genera con app.js -->
+          </div>
+        </div>
+
+        <!-- Encabezado de impresión invisible en pantalla -->
+        <div class="timeline-print-header" id="print-header">
+          <h2>Jornada de Actividades del Día de Canarias</h2>
+          <p>Organizado por el Centro Educativo</p>
+        </div>
+
+        <!-- Contenedor del Timeline Dinámico -->
+        <div class="empty-timeline-state" id="empty-timeline-state">
+          <div class="empty-timeline-icon" aria-hidden="true">📋</div>
+          <p class="empty-timeline-text">Aún no has seleccionado ningún curso. Haz clic en tu grupo arriba para ver tu horario cronológico sin rodeos.</p>
+        </div>
+
+        <div class="timeline-display" id="timeline-display">
+          <h3 id="selected-course-title" style="font-family: 'Montserrat', sans-serif; font-size: 1.4rem; margin-bottom: 2rem; color: var(--text-color); border-left: 4px solid var(--secondary-color); padding-left: 0.8rem;">
+            Jornada de tu curso
+          </h3>
+          
+          <div id="timeline-items-container">
+            <!-- Se rellena con app.js -->
+          </div>
+
+          <div class="timeline-actions">
+            <button class="btn-secondary" id="print-timeline-btn">
+              🖨️ Imprimir mi horario (A4)
+            </button>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="footer" id="app-footer">
+      <img src="logo-insti-entero2 mk3.png" alt="Logo del Centro Educativo" class="footer-logo" onerror="this.style.display='none'">
+      <p>© 2026 - Día de Canarias "EL GOFIO" | Centro Educativo</p>
+      <p>Diseño Web Accesible e Interactivo optimizado para móviles</p>
+    </footer>
+
+  </div>
+
+  <!-- Scripts de Carga de Datos y Lógica Front-End -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
