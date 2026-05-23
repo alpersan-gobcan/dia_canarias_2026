@@ -1090,6 +1090,17 @@ body.dark-mode .timeline-obs {
     display: block;
   }
   
+  /* Forzar 2 columnas en móvil para los cursos */
+  .course-selector-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .course-btn {
+    padding: 0.8rem 0.5rem;
+    font-size: 1.2rem;
+  }
+  
   .hour-header {
     flex-direction: column;
     align-items: flex-start;
