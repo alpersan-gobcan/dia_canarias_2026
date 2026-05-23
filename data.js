@@ -13,13 +13,24 @@ const SCHEDULE_DATA = {
       "teachers": "El alumnado que se queda en el aula está acompañado con el/la docente que imparte clase en esta franja horaria."
     },
     {
-      "id": "act_1_2",
+      "id": "act_1_2_a",
       "hour": 1,
       "hourLabel": "1ª Hora (8:00 - 8:55)",
       "timeSlot": "8:00 - 8:55",
-      "zone": "Mesas Jardines | Canchas",
+      "zone": "Mesas Jardines",
       "action": "Decorar los Ventorrillos | A las 8:25",
-      "groups": "1º ESO, 2º ESO, aula Enclave, Bachillerato y Ciclos por grupo Mesas jardines | 3º ESO y 4º ESO y resto de grupos canchas",
+      "groups": "1º ESO y 2º ESO y Aula Enclave mesas jardines",
+      "observations": "Baja solamente una selección de alumnado (entre 4 o 5 ) a las 8:25 horas a los ventorrillos",
+      "teachers": "El alumnado que decora los ventorrillos baja solo. | En los puestos de ventorrillos estarán los coordinadores DAC y Red INNOVAS"
+    },
+    {
+      "id": "act_1_2_b",
+      "hour": 1,
+      "hourLabel": "1ª Hora (8:00 - 8:55)",
+      "timeSlot": "8:00 - 8:55",
+      "zone": "Canchas",
+      "action": "Decorar los Ventorrillos | A las 8:25",
+      "groups": "3º ESO, 4º ESO, Bachillerato y Ciclos Canchas",
       "observations": "Baja solamente una selección de alumnado (entre 4 o 5 ) a las 8:25 horas a los ventorrillos",
       "teachers": "El alumnado que decora los ventorrillos baja solo. | En los puestos de ventorrillos estarán los coordinadores DAC y Red INNOVAS"
     },
@@ -46,14 +57,25 @@ const SCHEDULE_DATA = {
       "teachers": "El alumnado que va al salón de actos a ensayar estará con José Fran y Raúl"
     },
     {
-      "id": "act_2_1",
+      "id": "act_2_1_a",
       "hour": 2,
       "hourLabel": "2ª Hora (8:55 - 9:50)",
       "timeSlot": "2º hora | 8:55 | a | 9:50",
-      "zone": "Mesas Jardines y Canchas",
+      "zone": "Mesas Jardines",
       "action": "Ventorrillos",
-      "groups": "Esperan en el aula y bajan con el profesorado de 2ª hora | Desayuno grupal, el alumnado está en la mesa de su grupo y prepara la ofrenda solidaria para el Banco de Alimentos",
-      "observations": "1ºESO y 2º ESO y Aula Enclave mesas jardines | 3º ESO, 4º ESO y Bachillerato y Ciclos Canchas",
+      "groups": "1º ESO y 2º ESO y Aula Enclave mesas jardines",
+      "observations": "Esperan en el aula y bajan con el profesorado de 2ª hora | Desayuno grupal, el alumnado está en la mesa de su grupo y prepara la ofrenda solidaria para el Banco de Alimentos",
+      "teachers": "Docentes que tienen Clases con el alumnado en esta franja horaria"
+    },
+    {
+      "id": "act_2_1_b",
+      "hour": 2,
+      "hourLabel": "2ª Hora (8:55 - 9:50)",
+      "timeSlot": "2º hora | 8:55 | a | 9:50",
+      "zone": "Canchas",
+      "action": "Ventorrillos",
+      "groups": "3º ESO, 4º ESO y Bachillerato y Ciclos Canchas",
+      "observations": "Esperan en el aula y bajan con el profesorado de 2ª hora | Desayuno grupal, el alumnado está en la mesa de su grupo y prepara la ofrenda solidaria para el Banco de Alimentos",
       "teachers": "Docentes que tienen Clases con el alumnado en esta franja horaria"
     },
     {

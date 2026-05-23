@@ -152,6 +152,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ─── MODO PROYECTOR ───────────────────────────────────────────────────────────
+  const projectorToggleBtn = document.getElementById('projector-toggle-btn');
+  const savedProjectorMode = localStorage.getItem('projector_mode') === 'true';
+  const htmlRoot = document.documentElement;
+  
+  if (savedProjectorMode) {
+    htmlRoot.classList.add('projector-mode');
+    if (projectorToggleBtn) projectorToggleBtn.innerHTML = '📽️ Quitar ZOOM del aula';
+  }
+
+  if (projectorToggleBtn) {
+    projectorToggleBtn.addEventListener('click', () => {
+      const isProjector = htmlRoot.classList.toggle('projector-mode');
+      localStorage.setItem('projector_mode', isProjector);
+      
+      projectorToggleBtn.innerHTML = isProjector ? '📽️ Quitar ZOOM del aula' : '📽️ Clic aquí para proyectar en el aula y hacer ZOOM';
+      
+      // Animación al botón
+      projectorToggleBtn.style.transform = 'scale(1.05)';
+      setTimeout(() => projectorToggleBtn.style.transform = 'scale(1)', 200);
+    });
+  }
+
   // ─── RENDER TABLA POR HORA ────────────────────────────────────────────────────
   function renderHourTable() {
     if (currentHour === null) return;

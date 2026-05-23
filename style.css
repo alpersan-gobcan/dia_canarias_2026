@@ -50,6 +50,12 @@ body.dark-mode {
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px; /* Base por defecto, ideal para móviles y PCs */
+  transition: font-size 0.3s ease; /* Transición suave al ampliar */
+}
+
+/* Modo Proyector */
+html.projector-mode {
   font-size: 20px; /* Escala toda la interfaz un 25% para proyecciones */
 }
 
@@ -95,9 +101,14 @@ body::after {
 /* Contenedor principal */
 .app-container {
   width: 95%;
-  max-width: 1800px; /* Permitir que sea casi del ancho de la pantalla completa para que quepa bien la tabla */
+  max-width: 1400px; /* Ajuste moderado por defecto */
   margin: 0 auto;
   padding: 1.5rem 1rem;
+  transition: max-width 0.3s ease;
+}
+
+html.projector-mode .app-container {
+  max-width: 1800px; /* Permitir que sea casi del ancho de la pantalla completa para proyectar */
 }
 
 /* Encabezado */
@@ -185,6 +196,30 @@ body.dark-mode .header-text h1 {
 
 .flag-canarias:hover {
   transform: translateY(-3px) rotate(2deg);
+}
+
+/* Botón prominente de proyector */
+.projector-btn-prominent {
+  background: linear-gradient(135deg, var(--primary-color) 0%, #006096 100%);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.projector-btn-prominent:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  background: linear-gradient(135deg, #006096 0%, var(--primary-color) 100%);
 }
 
 /* Botón de tema claro/oscuro */
