@@ -10,7 +10,7 @@ const SCHEDULE_DATA = {
       "action": "Decoración Puertas de aulas | Autores literarios canarios",
       "groups": "Todo el alumnado en su aula",
       "observations": "Pasar lista y explicar la jornada al alumnado, usar infografía | El grupo está en el aula ultimando las puertas de autores literarios canarios | Recibimiento del jurado, al finalizar la hora",
-      "teachers": "El alumnado que se queda en el aula está acompañado con el/la docente que imparte clase en esta franja horaria | El alumnado que decora los ventorrillos baja solo. | En los puestos de ventorrillos estarán los coordinadores DAC y Red INNOVAS | El alumnado que va al salón de actos a ensayar estará con José Fran y Raúl"
+      "teachers": "El alumnado que se queda en el aula está acompañado con el/la docente que imparte clase en esta franja horaria."
     },
     {
       "id": "act_1_2",
@@ -19,9 +19,9 @@ const SCHEDULE_DATA = {
       "timeSlot": "8:00 - 8:55",
       "zone": "Mesas Jardines | Canchas",
       "action": "Decorar los Ventorrillos | A las 8:25",
-      "groups": "1º ESO, 2º ESO, aula Enclave por grupo Mesas jardines | 3º ESO y 4º ESO y resto de grupos canchas",
+      "groups": "1º ESO, 2º ESO, aula Enclave, Bachillerato y Ciclos por grupo Mesas jardines | 3º ESO y 4º ESO y resto de grupos canchas",
       "observations": "Baja solamente una selección de alumnado (entre 4 o 5 ) a las 8:25 horas a los ventorrillos",
-      "teachers": "El alumnado que se queda en el aula está acompañado con el/la docente que imparte clase en esta franja horaria | El alumnado que decora los ventorrillos baja solo. | En los puestos de ventorrillos estarán los coordinadores DAC y Red INNOVAS | El alumnado que va al salón de actos a ensayar estará con José Fran y Raúl"
+      "teachers": "El alumnado que decora los ventorrillos baja solo. | En los puestos de ventorrillos estarán los coordinadores DAC y Red INNOVAS"
     },
     {
       "id": "act_1_3",
@@ -41,19 +41,19 @@ const SCHEDULE_DATA = {
       "timeSlot": "8:00 - 8:55",
       "zone": "Salón de Actos",
       "action": "Ensayo General | A las 8:25",
-      "groups": "Selección de alumnado que prepara las obras de teatro. | 3º ESO A, B y C",
+      "groups": "Selección de alumnado que prepara las obras de teatro. | 3º ESO A, 3º ESO B y 3º ESO C",
       "observations": "Los que participan en la obra de teatro van al ensayo general al salón de actos a las 8:25 horas",
-      "teachers": "El alumnado que se queda en el aula está acompañado con el/la docente que imparte clase en esta franja horaria | El alumnado que decora los ventorrillos baja solo. | En los puestos de ventorrillos estarán los coordinadores DAC y Red INNOVAS | El alumnado que va al salón de actos a ensayar estará con José Fran y Raúl"
+      "teachers": "El alumnado que va al salón de actos a ensayar estará con José Fran y Raúl"
     },
     {
       "id": "act_2_1",
       "hour": 2,
       "hourLabel": "2ª Hora (8:55 - 9:50)",
       "timeSlot": "2º hora | 8:55 | a | 9:50",
-      "zone": "Mesas Jardines | Y | CANCHAS",
+      "zone": "Mesas Jardines y Canchas",
       "action": "Ventorrillos",
       "groups": "Esperan en el aula y bajan con el profesorado de 2ª hora | Desayuno grupal, el alumnado está en la mesa de su grupo y prepara la ofrenda solidaria para el Banco de Alimentos",
-      "observations": "1ºESO y 2º ESO y Aula Enclave mesas jardines | 3º ESO, 4º ESO y Restos de grupos Canchas",
+      "observations": "1ºESO y 2º ESO y Aula Enclave mesas jardines | 3º ESO, 4º ESO y Bachillerato y Ciclos Canchas",
       "teachers": "Docentes que tienen Clases con el alumnado en esta franja horaria"
     },
     {
@@ -106,7 +106,7 @@ const SCHEDULE_DATA = {
       "hourLabel": "3ª Hora (9:50 - 10:45)",
       "timeSlot": "9:50 - 10:45",
       "zone": "Trasera Talleres",
-      "action": "VARIOS",
+      "action": "TALLERES",
       "groups": "2º ESO B",
       "observations": "Todo el grupo",
       "teachers": "Docentes que tienen Clases con el alumnado en esta franja horaria"
@@ -117,7 +117,7 @@ const SCHEDULE_DATA = {
       "hourLabel": "3ª Hora (9:50 - 10:45)",
       "timeSlot": "9:50 - 10:45",
       "zone": "Canchas",
-      "action": "JUEGOS",
+      "action": "JUEGOS TRADICIONALES",
       "groups": "2º ESO E",
       "observations": "Todo el grupo",
       "teachers": "Docentes que tienen Clases con el alumnado en esta franja horaria"
@@ -140,7 +140,7 @@ const SCHEDULE_DATA = {
       "timeSlot": "9:50 - 10:45",
       "zone": "Salón Actos",
       "action": "OBRAS TEATRO",
-      "groups": "3º ESO Alumnado RESTANTE de la Obra | 4º ESO B Y C | BACH Y CICLOS",
+      "groups": "3º ESO A, 3º ESO B y 3º ESO C (Alumnado RESTANTE de la Obra) | 4º ESO B y 4º ESO C | Bachillerato y Ciclos",
       "observations": "Todo el grupo",
       "teachers": "Docentes que tienen Clases con el alumnado en esta franja horaria"
     },
@@ -173,7 +173,7 @@ const SCHEDULE_DATA = {
       "timeSlot": "11:15 - 12:10",
       "zone": "Patio Central",
       "action": "SHOW COOKING | (Rotación mitad de hora)",
-      "groups": "3º ALUMNADO RESTANTE | 4º ESO B Y C 11:40 a 12:10",
+      "groups": "3º ESO A, 3º ESO B y 3º ESO C (ALUMNADO RESTANTE) | 4º ESO B y 4º ESO C 11:40 a 12:10",
       "observations": "El alumnado rota a mitad de la franja horaria (ver columna “Grupos”) | Todo el grupo | Exceptuando al alumnado participante en las obras de teatro",
       "teachers": "Docentes que tienen Clases con el alumnado en esta franja horaria"
     },
@@ -184,7 +184,7 @@ const SCHEDULE_DATA = {
       "timeSlot": "11:15 - 12:10",
       "zone": "Aula Enclave",
       "action": "TALLER COCINA | (Rotación mitad de hora)",
-      "groups": "3º ALUMNADO RESTANTE | 4º ESO B Y C 11:15 a 11:40",
+      "groups": "3º ESO A, 3º ESO B y 3º ESO C (ALUMNADO RESTANTE) | 4º ESO B y 4º ESO C 11:15 a 11:40",
       "observations": "El alumnado rota a mitad de la franja horaria (ver columna “Grupos”) | Todo el grupo | Exceptuando al alumnado participante en las obras de teatro",
       "teachers": "Docentes que tienen Clases con el alumnado en esta franja horaria"
     },
@@ -205,8 +205,8 @@ const SCHEDULE_DATA = {
       "hourLabel": "4ª Hora (11:15 - 12:10)",
       "timeSlot": "11:15 - 12:10",
       "zone": "Trasera Talleres",
-      "action": "VARIOS",
-      "groups": "2º ESO D Y E",
+      "action": "TALLERES",
+      "groups": "2º ESO D y 2º ESO E",
       "observations": "Todo el grupo",
       "teachers": "Docentes que tienen Clases con el alumnado en esta franja horaria"
     },
@@ -216,7 +216,7 @@ const SCHEDULE_DATA = {
       "hourLabel": "4ª Hora (11:15 - 12:10)",
       "timeSlot": "11:15 - 12:10",
       "zone": "Canchas",
-      "action": "JUEGOS",
+      "action": "JUEGOS TRADICIONALES",
       "groups": "2º ESO C",
       "observations": "Todo el grupo",
       "teachers": "Docentes que tienen Clases con el alumnado en esta franja horaria"
@@ -239,7 +239,7 @@ const SCHEDULE_DATA = {
       "timeSlot": "11:15 - 12:10",
       "zone": "Salón Actos",
       "action": "OBRAS TEATRO",
-      "groups": "4º ESO A",
+      "groups": "1º ESO A y 4º ESO A",
       "observations": "Todo el grupo",
       "teachers": "Docentes que tienen Clases con el alumnado en esta franja horaria"
     },

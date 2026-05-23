@@ -390,19 +390,16 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="timeline-card" style="border-left: 4px solid #e07b00;">
             <div class="timeline-title" style="color: #c06000;">
               <span>📋 Pruebas de Diagnóstico</span>
-              <span style="font-size:0.85rem; background:#fff3e0; color:#c06000; padding:3px 10px; border-radius:6px; font-weight:700;">Examen oficial</span>
+              <span class="timeline-zone-tag" style="background:#fff3e0; color:#c06000; border-color:#e07b00;">🏫 Aula ${diagInfo.aula}</span>
             </div>
             <div class="timeline-details">
-              <div>
-                <div class="timeline-detail-label">Aula:</div>
-                <div class="timeline-detail-val">🏫 Aula ${diagInfo.aula}</div>
+              <div class="timeline-obs" style="background: #fff8f0; padding: 1rem; border-radius: 8px;">
+                <strong>Detalles:</strong> Durante esta hora el grupo realiza las <strong>Pruebas de Diagnóstico</strong> oficiales. Acudir puntualmente al aula indicada. No participar en las actividades de la jornada durante este tramo.
+                <br><small style="color: #c06000; font-weight: 800; font-size: 0.95rem; display: block; margin-top: 5px;">NOTAS: Examen oficial</small>
               </div>
               <div>
-                <div class="timeline-detail-label">Acompañante:</div>
+                <div class="timeline-detail-label">PROFESOR ASIGNADO:</div>
                 <div class="timeline-detail-val">👤 Docente asignado a la prueba</div>
-              </div>
-              <div class="timeline-obs">
-                <strong>Importante:</strong> Durante esta hora el grupo realiza las <strong>Pruebas de Diagnóstico</strong> oficiales. Acudir puntualmente al aula indicada. No participar en las actividades de la jornada durante este tramo.
               </div>
             </div>
           </div>
@@ -423,19 +420,16 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="timeline-card" style="border-left: 4px solid #7c3aed;">
             <div class="timeline-title" style="color: #5b21b6;">
               <span>🎭 Obra de Teatro (${course.name})</span>
-              <span style="font-size:0.85rem; background:#ede9fe; color:#5b21b6; padding:3px 10px; border-radius:6px; font-weight:700;">Actividad propia</span>
+              <span class="timeline-zone-tag" style="background:#ede9fe; color:#5b21b6; border-color:#7c3aed;">🎭 Salón de Actos</span>
             </div>
             <div class="timeline-details">
-              <div>
-                <div class="timeline-detail-label">Lugar:</div>
-                <div class="timeline-detail-val">🎭 Escenario / Espacio asignado</div>
+              <div class="timeline-obs" style="background: rgba(124, 58, 237, 0.05); padding: 1rem; border-radius: 8px;">
+                <strong>Detalles:</strong> En esta hora el grupo de ${course.name} presenta su <strong>obra de teatro propia</strong>. Acudir al Salón de Actos con puntualidad.
+                <br><small style="color: #5b21b6; font-weight: 800; font-size: 0.95rem; display: block; margin-top: 5px;">NOTAS: Actividad propia</small>
               </div>
               <div>
-                <div class="timeline-detail-label">Acompañante:</div>
+                <div class="timeline-detail-label">PROFESOR ASIGNADO:</div>
                 <div class="timeline-detail-val">👤 Docentes que tienen Clases con el alumnado en esta franja horaria</div>
-              </div>
-              <div class="timeline-obs">
-                <strong>Atención:</strong> En esta hora el grupo de ${course.name} presenta su <strong>obra de teatro propia</strong>. Acudir al espacio asignado con puntualidad.
               </div>
             </div>
           </div>
@@ -501,17 +495,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 <span class="timeline-zone-tag">📍 ${act.zone}</span>
               </div>
               <div class="timeline-details">
-                <div>
-                  <div class="timeline-detail-label">Zona específica:</div>
-                  <div class="timeline-detail-val">📍 ${act.zone}</div>
+                <div class="timeline-obs" style="background: rgba(0, 123, 192, 0.05); padding: 1rem; border-radius: 8px; color: var(--text-color); font-weight: 600;">
+                  <strong>Detalles:</strong> ${displayObs}
+                  <br><small style="color: var(--primary-color); font-weight: 800; font-size: 0.95rem; display: block; margin-top: 5px;">NOTAS: ${act.groups}</small>
                 </div>
                 <div>
-                  <div class="timeline-detail-label">Profesor asignado:</div>
+                  <div class="timeline-detail-label">PROFESOR ASIGNADO:</div>
                   <div class="timeline-detail-val">👤 ${act.teachers || 'Profesor de la hora correspondiente'}</div>
-                </div>
-                <div class="timeline-obs" style="color: var(--text-color); font-weight: 600;">
-                  <strong>Detalles:</strong> ${displayObs}<br>
-                  <small style="color: var(--primary-color); font-weight: 800; font-size: 0.95rem; display: block; margin-top: 5px;">NOTAS: ${act.groups}</small>
                 </div>
               </div>
             </div>
@@ -521,6 +511,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (h === 1) {
         cardsHTML += `
+          <div class="timeline-card" style="border-left: 4px solid var(--info-color); margin-top: 1.5rem; margin-bottom: 0.5rem;">
+            <div class="timeline-title" style="color: var(--info-color);">
+              <span>Preparar los talleres | A las 8:25</span>
+              <span class="timeline-zone-tag" style="background:rgba(59, 130, 246, 0.1); color:var(--info-color); border-color:var(--info-color);">📍 Trasera Talleres | Jardín de la Biblioteca</span>
+            </div>
+            <div class="timeline-details">
+              <div class="timeline-obs" style="background: rgba(59, 130, 246, 0.05); padding: 1rem; border-radius: 8px; color: var(--text-color); font-weight: 600;">
+                <strong>Detalles:</strong> Bajan a las 8:25 el alumnado que imparte talleres solamente. | En los puestos estarán los coordinadores del DAC y Red INNOVAS
+                <br><small style="color: var(--info-color); font-weight: 800; font-size: 0.95rem; display: block; margin-top: 5px;">NOTAS: Actividad específica</small>
+              </div>
+              <div>
+                <div class="timeline-detail-label">PROFESOR ASIGNADO:</div>
+                <div class="timeline-detail-val">👤 Docentes que imparten talleres</div>
+              </div>
+            </div>
+          </div>
+
           <div class="alert-box" style="background:#fee2e2; border:2px solid #ef4444; color:#b91c1c; padding:15px; border-radius:8px; margin-top:10px; font-weight:800; font-size:1.1rem; box-shadow: 0 4px 6px rgba(239, 68, 68, 0.2);">
             ⚠️ ATENCIÓN: A las 8:25 solo baja una selección de alumnado.
           </div>
@@ -547,19 +554,16 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="timeline-card" style="border-left: 4px solid var(--text-muted);">
         <div class="timeline-title" style="color: var(--text-muted);">
           <span>${action}</span>
-          <span style="font-size:0.8rem; background:var(--border-color); color:var(--text-muted); padding:2px 8px; border-radius:4px;">Actividad Regular / General</span>
+          <span class="timeline-zone-tag" style="background:var(--border-color); color:var(--text-muted); border-color:var(--text-muted);">📍 ${zone}</span>
         </div>
         <div class="timeline-details">
-          <div>
-            <div class="timeline-detail-label">Lugar / Zona:</div>
-            <div class="timeline-detail-val">📍 ${zone}</div>
+          <div class="timeline-obs" style="background: var(--bg-color); padding: 1rem; border-radius: 8px; border: 1px dashed var(--border-color);">
+            <strong>Detalles:</strong> ${obs}
+            <br><small style="color: var(--text-muted); font-weight: 800; font-size: 0.95rem; display: block; margin-top: 5px;">NOTAS: Actividad Regular / General</small>
           </div>
           <div>
-            <div class="timeline-detail-label">Acompañante:</div>
+            <div class="timeline-detail-label">PROFESOR ASIGNADO:</div>
             <div class="timeline-detail-val">👤 ${teacher}</div>
-          </div>
-          <div class="timeline-obs">
-            <strong>Nota:</strong> ${obs}
           </div>
         </div>
       </div>

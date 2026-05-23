@@ -39,61 +39,6 @@
         </div>
       </section>
 
-      <!-- SECCIÓN 1: VISTA GENERAL POR HORAS -->
-      <section class="hour-view-container" id="hour-view-section" aria-labelledby="hour-section-heading">
-        <h2 id="hour-section-heading" class="timeline-section-title">Planificación por Horas</h2>
-        <p class="timeline-section-subtitle">Navega a través de las 6 horas lectivas y consulta el cuadrante</p>
-
-        <!-- Selector de Horas de Navegación -->
-        <nav class="hour-selector-bar" id="hour-tabs-container" aria-label="Horas lectivas"></nav>
-
-        <!-- Mensaje guía cuando ninguna hora está seleccionada -->
-        <div class="empty-hour-state" id="empty-hour-state">
-          <div class="empty-timeline-icon" aria-hidden="true">🕒</div>
-          <p class="empty-timeline-text">Pulsa uno de los botones de arriba para ver las actividades de esa hora.<br>Pulsa de nuevo el mismo botón para ocultarlas.</p>
-        </div>
-
-        <!-- Contenedor del Cuadrante Horario (oculto hasta que se seleccione hora) -->
-        <div class="hour-section" id="hour-content-panel">
-          <div class="hour-header">
-            <div class="hour-title-container">
-              <span class="hour-icon" aria-hidden="true">⏰</span>
-              <span class="hour-title" id="active-hour-title">1ª Hora</span>
-            </div>
-            <span class="hour-time-badge" id="active-hour-badge">Franja 1</span>
-          </div>
-
-          <!-- Encabezado general para el docente acompañante -->
-          <div class="generic-teacher-header">
-            <strong>👤 Docente Acompañante General:</strong> El docente que imparte clases en esta franja horaria (salvo actividades específicas).
-          </div>
-
-          <!-- Vista de Tabla para Ordenadores (Desktop) -->
-          <div class="schedule-table-wrapper">
-            <table class="schedule-table" id="schedule-table">
-              <thead>
-                <tr>
-                  <th scope="col" style="width: 25%;">Zona / Lugar</th>
-                  <th scope="col" style="width: 35%;">Acción / Actividad</th>
-                  <th scope="col" style="width: 20%;">Grupos</th>
-                  <th scope="col" style="width: 18%;">Observaciones</th>
-                  <th scope="col" style="width: 2%; text-align: center;">⭐</th>
-                </tr>
-              </thead>
-              <tbody id="schedule-table-body">
-                <!-- Se rellena con app.js -->
-              </tbody>
-            </table>
-          </div>
-
-          <!-- Vista de Tarjetas para Dispositivos Móviles (Móvil) -->
-          <div class="mobile-cards-container" id="mobile-cards-container">
-            <!-- Se rellena con app.js -->
-          </div>
-
-        </div>
-      </section>
-
       <!-- SECCIÓN 2: MI JORNADA PERSONALIZADA (TIMELINE POR CURSO) -->
       <section class="timeline-section-container" id="my-timeline-section" aria-labelledby="timeline-heading">
         <h2 id="timeline-heading" class="timeline-section-title">🎓 Mi Jornada Personalizada</h2>
@@ -135,6 +80,61 @@
           </div>
         </div>
 
+      </section>
+
+      <!-- SECCIÓN 1: VISTA GENERAL POR HORAS -->
+      <section class="hour-view-container" id="hour-view-section" aria-labelledby="hour-section-heading">
+        <h2 id="hour-section-heading" class="timeline-section-title">Planificación por Horas</h2>
+        <p class="timeline-section-subtitle">Navega a través de las 6 horas lectivas y consulta el cuadrante</p>
+
+        <!-- Selector de Horas de Navegación -->
+        <nav class="hour-selector-bar" id="hour-tabs-container" aria-label="Horas lectivas"></nav>
+
+        <!-- Mensaje guía cuando ninguna hora está seleccionada -->
+        <div class="empty-hour-state" id="empty-hour-state">
+          <div class="empty-timeline-icon" aria-hidden="true">🕒</div>
+          <p class="empty-timeline-text">Pulsa uno de los botones de arriba para ver las actividades de esa hora.<br>Pulsa de nuevo el mismo botón para ocultarlas.</p>
+        </div>
+
+        <!-- Contenedor del Cuadrante Horario (oculto hasta que se seleccione hora) -->
+        <div class="hour-section" id="hour-content-panel">
+          <div class="hour-header">
+            <div class="hour-title-container">
+              <span class="hour-icon" aria-hidden="true">⏰</span>
+              <span class="hour-title" id="active-hour-title">1ª Hora</span>
+            </div>
+            <span class="hour-time-badge" id="active-hour-badge">Franja 1</span>
+          </div>
+
+          <!-- Encabezado general para el docente acompañante -->
+          <div class="generic-teacher-header">
+            <strong>👤 Docente Acompañante General:</strong> El docente que imparte clases en esta franja horaria (salvo actividades específicas).
+          </div>
+
+          <!-- Vista de Tabla para Ordenadores (Desktop) -->
+          <div class="schedule-table-wrapper">
+            <table class="schedule-table" id="schedule-table">
+              <thead>
+                <tr>
+                  <th scope="col" style="width: 18%;">Zona / Lugar</th>
+                  <th scope="col" style="width: 20%;">Acción / Actividad</th>
+                  <th scope="col" style="width: 17%;">Grupos</th>
+                  <th scope="col" style="width: 43%;">Observaciones</th>
+                  <th scope="col" style="width: 2%; text-align: center;">⭐</th>
+                </tr>
+              </thead>
+              <tbody id="schedule-table-body">
+                <!-- Se rellena con app.js -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Vista de Tarjetas para Dispositivos Móviles (Móvil) -->
+          <div class="mobile-cards-container" id="mobile-cards-container">
+            <!-- Se rellena con app.js -->
+          </div>
+
+        </div>
       </section>
 
     </main>

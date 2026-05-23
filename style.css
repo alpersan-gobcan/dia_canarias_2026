@@ -50,6 +50,7 @@ body.dark-mode {
 
 html {
   scroll-behavior: smooth;
+  font-size: 20px; /* Escala toda la interfaz un 25% para proyecciones */
 }
 
 body {
@@ -93,9 +94,10 @@ body::after {
 
 /* Contenedor principal */
 .app-container {
-  max-width: 1400px;
+  width: 95%;
+  max-width: 1800px; /* Permitir que sea casi del ancho de la pantalla completa para que quepa bien la tabla */
   margin: 0 auto;
-  padding: 2rem 1.5rem;
+  padding: 1.5rem 1rem;
 }
 
 /* Encabezado */
@@ -481,8 +483,9 @@ body.dark-mode .schedule-table tr:hover td {
 }
 
 .action-cell {
-  font-weight: 600;
-  color: var(--text-color);
+  font-weight: 700;
+  color: var(--primary-color);
+  text-transform: uppercase;
 }
 
 .groups-cell {
@@ -691,9 +694,9 @@ body.dark-mode .badge-special {
 
 .course-selector-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 1rem;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -728,7 +731,8 @@ body.dark-mode .badge-special {
 
 /* Timeline Layout */
 .timeline-display {
-  max-width: 800px;
+  max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
   padding-left: 2.5rem;
@@ -818,6 +822,10 @@ body.dark-mode .timeline-time {
   gap: 0.5rem;
 }
 
+.timeline-title span:first-child {
+  text-transform: uppercase;
+}
+
 /* Pequeña etiqueta de zona dentro del timeline */
 .timeline-zone-tag {
   font-size: 1rem;
@@ -837,17 +845,20 @@ body.dark-mode .timeline-zone-tag {
 }
 
 .timeline-details {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem; /* Aumentado para mayor separación */
   border-top: 2px solid var(--border-color);
-  padding-top: 1rem;
-  margin-top: 1rem;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .timeline-detail-label {
   font-weight: 800;
   color: var(--text-muted);
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   font-size: 1.05rem; /* Etiquetas aumentadas */
   text-transform: uppercase;
   margin-bottom: 0.3rem;
