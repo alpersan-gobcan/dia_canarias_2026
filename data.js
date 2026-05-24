@@ -1,5 +1,5 @@
 const SCHEDULE_DATA = {
-  "generalNotes": "NOTA:\nCon la intención de aclarar y contextualizar la jornada, en los primeros 25 minutos el/la docente explica al alumnado la jornada del día de Canarias, como, por ejemplo: Las zonas, acciones y espacios. Y la forma de proceder mediante rotación que se detalla en la infografía que se adjunta y que también está en EVAGD en el aula virtual de la RED INNOVAS.\n\nUna vez los grupos bajen, el aula debe quedar limpia y recogida. Con las sillas subidas, las ventanas cerradas, ordenadores apagados, etc., y no se podrá entrar en los edificios. El alumnado debe llevar todas sus cosas.",
+  "generalNotes": "NOTA:\nA primera hora cada grupo en su aula clase, no se dividirán a las optativas. \nCon la intención de aclarar y contextualizar la jornada, en los primeros 25 minutos el/la docente explica al alumnado la jornada del día de Canarias, como, por ejemplo: Las zonas, acciones y espacios. Y la forma de proceder mediante rotación que se detalla en la infografía que se adjunta y que también está en EVAGD en el aula virtual de la RED INNOVAS.\n\nUna vez los grupos bajen, el aula debe quedar limpia y recogida. Con las sillas subidas, las ventanas cerradas, ordenadores apagados, etc., y no se podrá entrar en los edificios. El alumnado debe llevar todas sus cosas.",
   "activities": [
     {
       "id": "act_1_1",
