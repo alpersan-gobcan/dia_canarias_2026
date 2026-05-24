@@ -90,17 +90,6 @@ const SCHEDULE_DATA = {
       "teachers": "Docentes que tienen Clases con el alumnado en esta franja horaria"
     },
     {
-      "id": "act_3_2",
-      "hour": 3,
-      "hourLabel": "3ª Hora (9:50 - 10:45)",
-      "timeSlot": "9:50 - 10:45",
-      "zone": "Patio Central",
-      "action": "SHOW COOKING | (Rotación mitad de hora)",
-      "groups": "1º ESO B 10:20 a 10:45",
-      "observations": "El alumnado de 1º de la ESO rota a mitad de la franja horaria (ver columna “Grupos”)",
-      "teachers": "Docentes que tienen Clases con el alumnado en esta franja horaria"
-    },
-    {
       "id": "act_3_3",
       "hour": 3,
       "hourLabel": "3ª Hora (9:50 - 10:45)",
@@ -108,6 +97,17 @@ const SCHEDULE_DATA = {
       "zone": "Aula Enclave",
       "action": "TALLER COCINA | (Rotación mitad de hora)",
       "groups": "1º ESO B 9:50 a 10:20",
+      "observations": "El alumnado de 1º de la ESO rota a mitad de la franja horaria (ver columna “Grupos”)",
+      "teachers": "Docentes que tienen Clases con el alumnado en esta franja horaria"
+    },
+    {
+      "id": "act_3_2",
+      "hour": 3,
+      "hourLabel": "3ª Hora (9:50 - 10:45)",
+      "timeSlot": "9:50 - 10:45",
+      "zone": "Patio Central",
+      "action": "SHOW COOKING | (Rotación mitad de hora)",
+      "groups": "1º ESO B 10:20 a 10:45",
       "observations": "El alumnado de 1º de la ESO rota a mitad de la franja horaria (ver columna “Grupos”)",
       "teachers": "Docentes que tienen Clases con el alumnado en esta franja horaria"
     },
@@ -189,17 +189,6 @@ const SCHEDULE_DATA = {
       "teachers": "Docentes que tienen Clases con el alumnado en esta franja horaria"
     },
     {
-      "id": "act_4_2",
-      "hour": 4,
-      "hourLabel": "4ª Hora (11:15 - 12:10)",
-      "timeSlot": "11:15 - 12:10",
-      "zone": "Patio Central",
-      "action": "SHOW COOKING | (Rotación mitad de hora)",
-      "groups": "3º ESO A, 3º ESO B y 3º ESO C (ALUMNADO RESTANTE) | 4º ESO B y 4º ESO C 11:40 a 12:10",
-      "observations": "El alumnado rota a mitad de la franja horaria (ver columna “Grupos”) | Todo el grupo | Exceptuando al alumnado participante en las obras de teatro",
-      "teachers": "Docentes que tienen Clases con el alumnado en esta franja horaria"
-    },
-    {
       "id": "act_4_3",
       "hour": 4,
       "hourLabel": "4ª Hora (11:15 - 12:10)",
@@ -207,6 +196,17 @@ const SCHEDULE_DATA = {
       "zone": "Aula Enclave",
       "action": "TALLER COCINA | (Rotación mitad de hora)",
       "groups": "3º ESO A, 3º ESO B y 3º ESO C (ALUMNADO RESTANTE) | 4º ESO B y 4º ESO C 11:15 a 11:40",
+      "observations": "El alumnado rota a mitad de la franja horaria (ver columna “Grupos”) | Todo el grupo | Exceptuando al alumnado participante en las obras de teatro",
+      "teachers": "Docentes que tienen Clases con el alumnado en esta franja horaria"
+    },
+    {
+      "id": "act_4_2",
+      "hour": 4,
+      "hourLabel": "4ª Hora (11:15 - 12:10)",
+      "timeSlot": "11:15 - 12:10",
+      "zone": "Patio Central",
+      "action": "SHOW COOKING | (Rotación mitad de hora)",
+      "groups": "3º ESO A, 3º ESO B y 3º ESO C (ALUMNADO RESTANTE) | 4º ESO B y 4º ESO C 11:40 a 12:10",
       "observations": "El alumnado rota a mitad de la franja horaria (ver columna “Grupos”) | Todo el grupo | Exceptuando al alumnado participante en las obras de teatro",
       "teachers": "Docentes que tienen Clases con el alumnado en esta franja horaria"
     },
