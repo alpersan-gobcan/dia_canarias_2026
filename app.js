@@ -38,11 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // ─── DATOS DE PRUEBAS DE DIAGNÓSTICO (2º ESO) ───────────────────────────────
   // Tabla de aula por grupo para las pruebas de diagnóstico
   const DIAGNOSTICO = {
-    '2eso_a': { horas: [1], aula: '40', nota: 'Aula 40 – Pruebas de Diagnóstico (1ª hora)' },
-    '2eso_b': { horas: [4], aula: '40', nota: 'Aula 40 – Pruebas de Diagnóstico (4ª hora)' },
-    '2eso_c': { horas: [3], aula: '40', nota: 'Aula 40 – Pruebas de Diagnóstico (3ª hora)' },
-    '2eso_d': { horas: [3], aula: '41', nota: 'Aula 41 – Pruebas de Diagnóstico (3ª hora)' },
-    '2eso_e': { horas: [1], aula: '41', nota: 'Aula 41 – Pruebas de Diagnóstico (1ª hora)' },
+    '2eso_a': { horas: [1], aula: '35', nota: 'Aula 35 – Pruebas de Diagnóstico (1ª hora)' },
+    '2eso_b': { horas: [4], aula: '35', nota: 'Aula 35 – Pruebas de Diagnóstico (4ª hora)' },
+    '2eso_c': { horas: [3], aula: '35', nota: 'Aula 35 – Pruebas de Diagnóstico (3ª hora)' },
+    '2eso_d': { horas: [3], aula: '34', nota: 'Aula 34 – Pruebas de Diagnóstico (3ª hora)' },
+    '2eso_e': { horas: [1], aula: '34', nota: 'Aula 34 – Pruebas de Diagnóstico (1ª hora)' },
   };
 
   // ─── LISTA DE CURSOS ─────────────────────────────────────────────────────────
@@ -534,14 +534,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (h === 1) {
         cardsHTML += `
+          <div class="alert-box" style="background:#fee2e2; border:2px solid #ef4444; color:#b91c1c; padding:15px; border-radius:8px; margin-top:10px; font-weight:800; font-size:1.1rem; box-shadow: 0 4px 6px rgba(239, 68, 68, 0.2);">
+            ⚠️ ATENCIÓN: A las 8:25 solo baja una selección de alumnado.
+          </div>
+        `;
+      }
+
+      if (h === 2) {
+        cardsHTML += `
           <div class="timeline-card" style="border-left: 4px solid var(--info-color); margin-top: 1.5rem; margin-bottom: 0.5rem;">
             <div class="timeline-title" style="color: var(--info-color);">
-              <span>Preparar los talleres | A las 8:25</span>
+              <span>Preparar los talleres | A las 9:25</span>
               <span class="timeline-zone-tag" style="background:rgba(59, 130, 246, 0.1); color:var(--info-color); border-color:var(--info-color);">📍 Trasera Talleres | Jardín de la Biblioteca</span>
             </div>
             <div class="timeline-details">
               <div class="timeline-obs" style="background: rgba(59, 130, 246, 0.05); padding: 1rem; border-radius: 8px; color: var(--text-color); font-weight: 600;">
-                <strong>Detalles:</strong> Bajan a las 8:25 el alumnado que imparte talleres solamente. | En los puestos estarán los coordinadores del DAC y Red INNOVAS
+                <strong>Detalles:</strong> A las 9:25 va solamente el alumnado que imparte talleres. | En los puestos estarán los coordinadores del DAC y Red INNOVAS, además de docentes que imparten talleres.
                 <br><small style="color: var(--info-color); font-weight: 800; font-size: 0.95rem; display: block; margin-top: 5px;">NOTAS: Actividad específica</small>
               </div>
               <div>
@@ -549,10 +557,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="timeline-detail-val">👤 Docentes que imparten talleres</div>
               </div>
             </div>
-          </div>
-
-          <div class="alert-box" style="background:#fee2e2; border:2px solid #ef4444; color:#b91c1c; padding:15px; border-radius:8px; margin-top:10px; font-weight:800; font-size:1.1rem; box-shadow: 0 4px 6px rgba(239, 68, 68, 0.2);">
-            ⚠️ ATENCIÓN: A las 8:25 solo baja una selección de alumnado.
           </div>
         `;
       }
