@@ -58,9 +58,11 @@ document.addEventListener('DOMContentLoaded', () => {
     { id: '3eso_a', name: '3º ESO A', query: '3º ESO A' },
     { id: '3eso_b', name: '3º ESO B', query: '3º ESO B' },
     { id: '3eso_c', name: '3º ESO C', query: '3º ESO C' },
+    { id: '1pdc', name: '1º PDC', query: '1º PDC' },
     { id: '4eso_a', name: '4º ESO A', query: '4º ESO A' },
     { id: '4eso_b', name: '4º ESO B', query: '4º ESO B' },
     { id: '4eso_c', name: '4º ESO C', query: '4º ESO C' },
+    { id: '2pdc', name: '2º PDC', query: '2º PDC' },
     { id: 'enclave', name: 'Aula Enclave', query: 'Enclave' },
     { id: 'bach_ciclos', name: 'Bachillerato y Ciclos', query: 'BACH' }
   ];
@@ -330,10 +332,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ─── LÓGICA DE PERTENENCIA AL CURSO ──────────────────────────────────────────
   function isActivityForCourse(act, course) {
+    let courseQuery = course.query.toLowerCase();
+    let courseName = course.name.toLowerCase();
+
+    // Alias PDC a sus equivalentes de la ESO
+    if (course.id === '1pdc') {
+      courseQuery = '3º eso c';
+      courseName = '3º eso c';
+    } else if (course.id === '2pdc') {
+      courseQuery = '4º eso a';
+      courseName = '4º eso a';
+    }
+
     const groupsText = act.groups.toLowerCase();
     const obsText = act.observations.toLowerCase();
-    const courseQuery = course.query.toLowerCase();
-    const courseName = course.name.toLowerCase();
 
     // 1. Eventos colectivos (Todos los grupos)
     if (groupsText.includes('todo el alumnado') || groupsText.includes('todos los grupos')) {
